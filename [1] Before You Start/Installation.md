@@ -8,6 +8,7 @@ You should be using a Windows computer. You can definitely use a Mac or a Linux 
   - [Visual Studio Code](#visual-studio-code)
   - [Visual Studio Code Extensions](#visual-studio-code-extensions)
   - [Github Desktop](#github-desktop)
+  - [Git (Git Bash)](#git-git-bash)
   - [Phoenix Library](#phoenix-library)
 
 ## Java
@@ -54,6 +55,15 @@ These are not required, but I like these:
 Git is a version control system. You can turn a folder on your computer into something called a "Git Repository". It's like cloud storage (like Google Drive), but made specifically for code and collaboration. Traditionally, Git is used in a terminal, but Github has a very nice program that lets you use Git easily in a GUI.
 
 Git and Github are two different things. Github is to Git like GMail is to emails. Github merely hosts Git on their servers. There are other providers for Git like Gitlab and BitBucket, but we use GitHub because it's the most mainstream and we're not weird.
+
+## Git (Git Bash)
+
+[Download Link](https://git-scm.com/downloads)
+
+Want something a bit more complex than GitHub Desktop? Then Git is just for you my coding friend! Git (like previously mentioned) is a version control system that is used to store/share code. Git Bash allows you to use Git from the command line, giving you a lot more freedom (and frustration) when compared to GitHub Desktop. You can even use Linix/Unix commands and Windows commands.
+<br/> 
+
+**Note!-** Both Git and GitHub Desktop (despite it's name) can used in conjunction with most online Git repositories (such as **GitHub**, **GitLab**, **BitBucket**, etc).
 
 ## Phoenix Library
 
