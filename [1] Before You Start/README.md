@@ -4,7 +4,7 @@
   * [Welcome](#welcome)
   * [An Example...](#an-example)
   * [Goals](#goals)
-  * [Installation](Installation.md)
+  * [Installation](#installation)
 
 ## Welcome!
 Hello everyone that is reading this!, I am Matthew Roman, one of the software directors for this year on the HHH FRC Robotics Team. 
@@ -99,6 +99,15 @@ At the start of this year, we are planning to have meetings once every week- on 
 **Everyone** will attend the meeting, with the cohort in school going to the cafeteria and the ones online going to a zoom meeting.
 
 *Note!*- There will normally be a typed up version of the lesson that we are going over, however this can change later in the year as we tackle topics that we are less familiar with (such as PID and Limelight).
+
+
+## Installation
+
+Since this is software, there of course has to be specific programs that we will use during the year.
+
+Click here if you need to download any of the programs that we use: [Installation](Installation.md##programs-to-install)
+
+You should still check it out even if you think you have everything (it's a good list : D).
 
 Thanks for reading this and I hope that we can help software to the best of our abilities (or at least try to)...
 <br/>
