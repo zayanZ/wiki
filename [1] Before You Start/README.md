@@ -101,5 +101,6 @@ At the start of this year, we are planning to have meetings once every week- on 
 *Note!*- There will normally be a typed up version of the lesson that we are going over, however this can change later in the year as we tackle topics that we are less familiar with (such as PID and Limelight).
 
 Thanks for reading this and I hope that we can help software to the best of our abilities (or at least try to)...
-                                                
-&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; --Matt
+<br/>
+<br/>                                                
+--Matt
