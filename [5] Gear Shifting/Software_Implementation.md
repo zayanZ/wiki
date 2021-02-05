@@ -67,9 +67,11 @@ public void toggleGear() {
 
 Note: Value.kOff also exists, it turns off the solenoid for either being set forward or backwards.
 
+If you have any questions about the DoubleSolenoid class, here is the [documentation](https://first.wpi.edu/FRC/roborio/release/docs/java/edu/wpi/first/wpilibj/DoubleSolenoid.html) for the class.  
+
 Finally, a command to toggle/set the gears must be created. This would be accomplished by calling the method in the `initialize()` method of a command.
 
-// This section is going to be more oriented towards reference material and less so explaining how it works, some code examples can help with the reference, and we could add some more in the future if you want. I think this is good enough since we shouldn't be giving exactly how to do it, but we're just giving some good reference material
+This section is going to be more oriented towards reference material and less so explaining how it works, some code examples can help with the reference, and we could add some more in the future if you want. I think this is good enough since we shouldn't be giving exactly how to do it, but we're just giving some good reference material
 
 ### **Software Multipliers (Speed Shifting)**
 
@@ -87,7 +89,9 @@ As seen in the [drive class](https://github.com/frc3624/infinite-recharge/blob/m
 
 ## Advanced Usages
 
-Sometimes, both standard gear shifting and software speed shifting can be implemented into the same robot (seen in the Infinite Recharge robot). This can be achieved 
+Now, you after learning about these two different techniques, you may want to use them in tandum. This in theory would seem like a way to have the best of both worlds, customizable speeds, and having a wonderful robot which will be amazing. This is stupid. 
+
+There isn't much purpose to have the two types of shifting work alongside one another since it increses complexity greatly for the driver. While it may seem like a good idea at first, overall it's a bad idea due to the increased skill and coordination between drivers and the increased training for something that should be simple. Unless it's necessary for the robot in a edge case, using both styles alongside one another is not recommendable at all.
 
 ## Former Director Comments (only edit if you are a current director)
 
