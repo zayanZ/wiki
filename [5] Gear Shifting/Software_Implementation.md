@@ -1,16 +1,14 @@
 # Software Implementation
 
-* Table of Contents
-
-    * [Ways to Implement Gear Shifting](#Ways-to-Implement-Gear-Shifting)
-      * [Pneumatics](#**Pneumatics**)
-      * [Software Multipliers (Speed Shifting)](#**Software-Multipliers**)
-    * [When to Implement Which Type](#When-to-Implement-Which-Type)
-    * [Past Code Examples](#Past-Code-Examples)
-      * [Solenoid Shift](#**Solenoid-Shift**)
-      * [Software Multipliers (Speed Shifting)](#**Software-Multipliers-(Speed-Shifting)**)
-    * [Advanced Usages](#Advanced-Usages)
-    * [Former Director Comments](#Former-Director-Comments-(only-edit-if-you-are-a-current-director))
+* [Ways to Implement Gear Shifting](#Ways-to-Implement-Gear-Shifting)
+    * [Pneumatics](#**Pneumatics**)
+    * [Software Multipliers (Speed Shifting)](#**Software-Multipliers**)
+* [When to Implement Which Type](#When-to-Implement-Which-Type)
+* [Past Code Examples](#Past-Code-Examples)
+    * [Solenoid Shift](#**Solenoid-Shift**)
+    * [Software Multipliers (Speed Shifting)](#**Software-Multipliers-(Speed-Shifting)**)
+* [Advanced Usages](#Advanced-Usages)
+* [Former Director Comments](#Former-Director-Comments-(only-edit-if-you-are-a-current-director))
 
 ## Ways to Implement Gear Shifting
 
@@ -100,6 +98,7 @@ There isn't much purpose to have the two types of shifting work alongside one an
 I am Kyle Bobert Diaz and I approve of this message.
 
 ### Matt & Talha
+
 Year 2020-2021
 
 Heyo Matt here, I just wanted to give a bit more insight/advice that will (hopefully) help any current/future nerds on this team.
