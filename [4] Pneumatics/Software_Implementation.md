@@ -14,7 +14,7 @@ Hopefully you've read about how pneumatics works. Knowing this will aid you when
 
 ## Pneumatics Control Module
 
-The Pneumatics Control Module (PCM) is a board which lets us control our pneumatic devices. The PCM has its own specialized CAN ID, and has PCM IDs aboard it. Typically, you'll only see 0 and 1, used however there may be more channels if the robot contains more pneumatic devices.
+The Pneumatics Control Module (PCM) is a board which lets us control our pneumatic devices. The PCM has its own specialized CAN ID, and has PCM IDs aboard it. Typically, you'll only see 0 and 1, used, however there may be more channels if the robot contains more pneumatic devices.
 
 ## Solenoid
 

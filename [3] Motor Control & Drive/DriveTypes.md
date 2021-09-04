@@ -1,6 +1,6 @@
 # Drive Types
 
-While Differential Drive is by far our most popular drive type, we sometimes opt to use a different method of driving for our robot. The most notable (and most destructive to the cafeteria floors...) is MecanumDrive, seen most recently on 2015's Aerial Assist robot. We will cover these alternative types in this file.
+While Differential Drive is by far our most popular drive type, we sometimes opt to use a different method of driving for our robot. The most notable (and most destructive to the cafeteria floors...) is MecanumDrive, seen most recently on 2014's Aerial Assist robot. We will cover these alternative types in this file.
 
 ## Mecanum Drive
 
