@@ -7,9 +7,10 @@
   * [Installation](#installation)
 
 ## Welcome!
-Hello everyone that is reading this!, I am Matthew Roman, one of the software directors for this year on the HHH FRC Robotics Team. 
 
-As you already know, this year is going to be very different when compared to previous years as there will be no in-person competitions due to COVID-19 (apparently it has to mess with *everything* it touches). 
+Hello everyone that is reading this!, I am Matthew Roman, one of the software directors for this year on the HHH FRC Robotics Team.
+
+As you already know, this year is going to be very different when compared to previous years as there will be no in-person competitions due to COVID-19 (apparently it has to mess with *everything* it touches).
 
 However, this is not all in vain as it allows us (Talha and I) the time to address one of software team's biggest problems-  *understanding* our code.
 
@@ -60,6 +61,7 @@ However, another way that you could go about this is by using *switch* statement
     }
     
 ```
+
 **Which would you chose in your program?**
 
 If I were to ask you this question, many of you would say that it wouldn't matter and choose either one. However, what happens if the program was changed to a 10-sided die? a 100-sided die? *a 1000-sided one*?
@@ -78,15 +80,16 @@ Due to this, it can be concluded that the better option for the current program 
 
 ## Goals/Procedures
 
-As one of the heads of software this year, one of my goals is to help you guys have a better understanding of your code. 
+As one of the heads of software this year, one of my goals is to help you guys have a better understanding of your code.
 
-No, that does not mean that I'm requiring you to comprehend/comment on every little bit of your code. 
+No, that does not mean that I'm requiring you to comprehend/comment on every little bit of your code.
 
 All I'm asking is that you not just understand *what* you are doing, but also *why* you are doing it (that goes for **everyone** on the team, including Talha and I).
 <br/>
 <br/>
 
 Some goals for this year include:
+
 1. Understanding our code (as mentioned previously)
 2. Learning to program the robot- both *old* and *new* topics
 3. Using Git- yes, we are actually going to use GitBash *properly* this time around..
@@ -100,7 +103,6 @@ At the start of this year, we are planning to have meetings once every week- on 
 
 *Note!*- There will normally be a typed up version of the lesson that we are going over, however this can change later in the year as we tackle topics that we are less familiar with (such as PID and Limelight).
 
-
 ## Installation
 
 Since this is software, there of course has to be specific programs that we will use during the year.
@@ -110,6 +112,5 @@ Click here if you need to download any of the programs that we use: [Installatio
 You should still check it out even if you think you have everything (it's a good list : D).
 
 Thanks for reading this and I hope that we can help software to the best of our abilities (or at least try to)...
-<br/>
-<br/>                                                
+
 --Matt

@@ -1,14 +1,14 @@
 # Cross the Road Electronics (CTRE) Controllers
 
-* [Single Motor](#Single-Motor-Control)
-    * [Objects](#Motor-Objects)
-    * [Control](#Controlling)
-* [Differential Drive](#Differential-Drive)
-    * [Objects](#DiffDrive-Objects)
-    * [Master/Slave](#Master/Slave)
-    * [arcadeDrive()](#arcadeDrive())
-* [Commands](#Commands)
-* [Former Director Comments](#Former-Director-Comments-(only-edit-if-you-are-a-current-director))
+- [Single Motor](#Single-Motor-Control)
+  - [Objects](#Motor-Objects)
+  - [Control](#Controlling)
+- [Differential Drive](#Differential-Drive)
+  - [Objects](#DiffDrive-Objects)
+  - [Master/Slave](#Master/Slave)
+  - [arcadeDrive()](#arcadeDrive())
+- [Commands](#Commands)
+- [Former Director Comments](#Former-Director-Comments-(only-edit-if-you-are-a-current-director))
 
 ## Single Motor Control
 

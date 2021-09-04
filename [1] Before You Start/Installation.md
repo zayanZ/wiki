@@ -10,6 +10,7 @@ You should be using a Windows computer. You can definitely use a Mac or a Linux 
   - [Github Desktop](#github-desktop)
   - [Git (Git Bash)](#git-git-bash)
   - [Phoenix Library](#phoenix-library)
+  - [Rev Hardware Client](#Rev-Hardware-Client)
 
 ## Java
 
@@ -74,3 +75,11 @@ Want something a bit more complex than GitHub Desktop? Then Git is just for you 
 Newest version, with the installer.
 
 Cross the Road Electronics sells the Talon and Falcon speed controllers that we use in the robot. This stuff downloads the libraries needed to use them, and a program that lets us configure them.
+
+## Rev Hardware Client
+
+[Download Link](https://docs.revrobotics.com/rev-control-system/managing-the-control-system/rev-hardware-client)
+
+Press the orange button to download it.
+
+Rev Robotics sells the SparkMax Controllers which we use occasionally. You most likely won't see it a lot when programming, but you should have it for when it comes time to use these controllers.

@@ -1,14 +1,14 @@
 # Software Implementation
 
-* [Ways to Implement Gear Shifting](#Ways-to-Implement-Gear-Shifting)
-    * [Pneumatics](#**Pneumatics**)
-    * [Software Multipliers (Speed Shifting)](#**Software-Multipliers**)
-* [When to Implement Which Type](#When-to-Implement-Which-Type)
-* [Past Code Examples](#Past-Code-Examples)
-    * [Solenoid Shift](#**Solenoid-Shift**)
-    * [Software Multipliers (Speed Shifting)](#**Software-Multipliers-(Speed-Shifting)**)
-* [Advanced Usages](#Advanced-Usages)
-* [Former Director Comments](#Former-Director-Comments-(only-edit-if-you-are-a-current-director))
+- [Ways to Implement Gear Shifting](#Ways-to-Implement-Gear-Shifting)
+  - [Pneumatics](#**Pneumatics**)
+  - [Software Multipliers (Speed Shifting)](#**Software-Multipliers**)
+- [When to Implement Which Type](#When-to-Implement-Which-Type)
+- [Past Code Examples](#Past-Code-Examples)
+  - [Solenoid Shift](#**Solenoid-Shift**)
+  - [Software Multipliers (Speed Shifting)](#**Software-Multipliers-(Speed-Shifting)**)
+- [Advanced Usages](#Advanced-Usages)
+- [Former Director Comments](#Former-Director-Comments-(only-edit-if-you-are-a-current-director))
 
 ## Ways to Implement Gear Shifting
 

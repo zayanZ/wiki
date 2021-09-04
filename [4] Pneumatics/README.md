@@ -1,3 +1,3 @@
 # Pneumatics
 
-This is empty for now, just needed to get this folder to show up on Github lol
+Pneumatics is ia branch of engineering which deal with gas or pressurized air. In simpler terms, we're dealing with moving air around to do a certain task. Typically it will have 
