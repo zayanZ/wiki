@@ -30,6 +30,8 @@ As a programmer, you will be mostly working with the RoboRIO. The RoboRIO is a c
 
 **You don't need the serial key to install it**. It will ask you for a serial key, but if you close that window, you can still use the software indefinitely - winrar style. It will pester you for it, so you should ask the software director if they have it. You can always enter the serial key after completing the installation, so don't feel afraid to close out the serial key popup.
 
+Mac/Linux: If you have only have a Mac as a personal device (or if you're a loser who uses Linux only), don't worry, you can still push code to the robot. However, you **CAN NOT** use your computer at competitions, a Windows laptop **MUST** be used. [QDriverStation](https://github.com/FRC-Utilities/QDriverStation/releases/tag/v21.04) is a workaround for non Windows laptops in order to communicate with the RoboRIO. Setup is rather simple, just install the required file type, and make sure to set up the Xbox Controller driver as well.
+
 ## Visual Studio Code
 
 [Download Link](https://code.visualstudio.com/)
