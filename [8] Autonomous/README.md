@@ -1,3 +1,7 @@
 # Autonomous
 
-This is empty for now, just needed to get this folder to show up on Github lol
+See the following docs:
+
+https://docs.wpilib.org/en/stable/docs/software/wpilib-tools/pathweaver/introduction.html
+
+https://docs.wpilib.org/en/stable/docs/software/examples-tutorials/trajectory-tutorial/index.html#trajectory-tutorial
