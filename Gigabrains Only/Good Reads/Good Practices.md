@@ -1,6 +1,6 @@
 # Good Practices
 
-[Clean Code PDF](https://enos.itcollege.ee/~jpoial/oop/naited/Clean%20Code.pdf)
+[Clean Code PDF](https://github.com/ontiyonke/book-1/blob/master/%5BPROGRAMMING%5D%5BClean%20Code%20by%20Robert%20C%20Martin%5D.pdf)
 
 I know you don't feel nearly as passionate as I do about writing clean code. You may not even think it matters because we're only creating a robot that's a dozen files large, not hundreds like in an enterprise setting. But our small setting should only make you want to make our code clean even more because it's so easy to make it that way. You probably don't really understand what "clean code" really is, and I pity you for that. Go into any project you didn't make try to understand it. Part of the quest of Clean Code is to make code easily understandable from an outside perspective.
 
