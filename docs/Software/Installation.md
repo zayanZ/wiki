@@ -6,7 +6,7 @@ You should be using a Windows computer. You can definitely use a Mac or a Linux 
 
 [Download Link](https://adoptopenjdk.net/)
 
-As of the 2020 season, you are supposed to get Java 11. This is not the newest version. Yes, every version of Java is backwards compatible, but sometimes we encounter things that don't support the newest version of Java... somehow...
+As of the 2023 season, you are supposed to get Java 11. This is not the newest version. Yes, every version of Java is backwards compatible, but sometimes we encounter things that don't support the newest version of Java... somehow...
 
 ## FRC Game Tools
 
@@ -62,7 +62,7 @@ Want something a bit more complex than GitHub Desktop? Then Git is just for you 
 
 [Download Link](https://www.ctr-electronics.com/hro.html#product_tabs_technical_resources)
 
-![Location of the phoenix installer on the website](Images/phoenix-installer-download-location.jpg)
+![Location of the phoenix installer on the website](img/intro/phoenix-installer-download-location.jpg)
 
 Newest version, with the installer.
 
@@ -74,4 +74,4 @@ Cross the Road Electronics sells the Talon and Falcon speed controllers that we 
 
 Press the orange button to download it.
 
-Rev Robotics sells the SparkMax Controllers which we use occasionally. You most likely won't see it a lot when programming, but you should have it for when it comes time to use these controllers.
+Rev Robotics sells the SparkMax Controllers which we use a decent amount.

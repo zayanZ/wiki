@@ -1,5 +1,4 @@
-Shooters
-========
+# Shooters
 
 This section is dedicated to the flywheel shooter design. This shooter type is incredibly common across FRC, and has been on our Infinite Recharge and Rapid React robots.
 

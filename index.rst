@@ -29,8 +29,7 @@ Team 3624 Wiki
 
    docs/Software/Installation.rst
    docs/Software/Motors.rst
-   docs/Software/DiffDrive.rst
-   docs/Software/SwerveDrive.rst
+   docs/Software/DriveBase.rst
    docs/Software/Pneumatics.rst
    docs/Software/GearShifting.rst
    docs/Software/Sensors.rst
@@ -45,9 +44,9 @@ Team 3624 Wiki
    :hidden:
    :caption: Advanced Software
 
+   docs/Software/Gigabrains-Only/Good-Reads/CleanCode
    docs/Software/Gigabrains-Only/Advanced-Maths
    docs/Software/Gigabrains-Only/Good-Reads/ControlsEngineering
    docs/Software/Gigabrains-Only/Good-Reads/FRC Documentation
    docs/Software/Gigabrains-Only/Good-Reads/Git-(Pros-only)
-   docs/Software/Gigabrains-Only/Good-Reads/Good Practices
    docs/Software/Gigabrains-Only/Pro-Guide-to-VSCode/Workspaces

@@ -1,6 +1,4 @@
-
-Autonomous
-==========
+# Autonomous
 
 See the following docs:
 
