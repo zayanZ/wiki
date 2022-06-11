@@ -7,11 +7,8 @@ When we talk about motor control, we're talking about how our code interacts wit
 
 CTRE has its own `documentation <https://docs.ctre-phoenix.com/en/latest/index.html>`_ which I'd suggest checking out, and this moreso serves for a basic usage of motors.
 
-Cross the Road Electronics (CTRE) Controllers
-=============================================
-
-Single Motor Control
---------------------
+CTRE Motor Control
+------------------
 
 `Official Documentation <https://www.ctr-electronics.com/downloads/api/java/html/classcom_1_1ctre_1_1phoenix_1_1motorcontrol_1_1can_1_1_base_motor_controller.html>`_
 
@@ -36,12 +33,12 @@ This method does what it says, not much to it. Given a speed between 0-1 (which 
 This method can also be used with other ControlModes which can be seen in full `here <https://www.ctr-electronics.com/downloads/api/java/html/enumcom_1_1ctre_1_1phoenix_1_1motorcontrol_1_1_control_mode.html#ab4de63991da4d77be1719fd41d0e8035>`_. However, most use cases will most likely use the above method.
 
 Differential Drive
-------------------
+==================
 
 `Official Documentation <https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/drive/DifferentialDrive.html>`_
 
 DiffDrive Objects
-^^^^^^^^^^^^^^^^^
+-----------------
 
 ``private final DifferentialDrive diffDrive = new DifferentialDrive(leftMaster, rightMaster)``
 

@@ -1,23 +1,8 @@
-
-Software Implementation
-=======================
+Pneumatics
+==========
 
 Pneumatics is ia branch of engineering which deal with gas or pressurized air. In simpler terms, we're dealing with moving air around to do a certain task.
 
-
-* `Pneumatics Control Module (PCM) <#Pneumatics-Control-Module>`_
-* `Solenoid <#Solenoid>`_
-
-  * `Objects <#Solenoid-Objects>`_
-  * `.get() and .set() <#.get(>`_\ -and-.set())
-
-* `DoubleSolenoid <#DoubleSolenoid>`_
-
-  * `Objects <#DoubleSolenoid-Objects>`_
-  * `.get() and .set() <#.get(>`_\ -and-.set(Value))
-  * `Gear Shift <#Gear-Shift>`_
-
-* `Former Director Comments <#Former-Director-Comments-(only-edit-if-you-are-a-current-director>`_\ )
 
 Pneumatics Control Module
 -------------------------
