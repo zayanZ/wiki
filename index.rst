@@ -12,6 +12,7 @@ Team 3624 Wiki
    docs/Hardware/GearShifting
    docs/Hardware/Pneumatics
    docs/Hardware/Sensors
+   docs/Hardware/Bumpers
 
 
 .. toctree::
