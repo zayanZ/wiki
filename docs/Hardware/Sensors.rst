@@ -3,7 +3,7 @@
 
 
 Sensors
-=======================
+=======
 
 
 * `Proximity Sensors <#Proximity-Sensors>`_

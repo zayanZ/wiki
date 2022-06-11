@@ -1,5 +1,5 @@
 Gear Shifting
-================
+=============
 
 What is Gear Shifting
 ---------------------

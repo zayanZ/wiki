@@ -8,7 +8,8 @@ Team 3624 Wiki
 
    docs/Hardware/Tools.rst
    docs/Hardware/Electronics.rst
-   docs/Hardware/DriveBase.rst
+   docs/Hardware/TankDrive.rst
+   docs/Hardware/SwerveDrive.rst
    docs/Hardware/GearShifting.rst
    docs/Hardware/Pneumatics.rst
    docs/Hardware/Sensors.rst
@@ -27,7 +28,9 @@ Team 3624 Wiki
    :caption: Software
 
    docs/Software/Installation.rst
-   docs/Software/MotorsDrive.rst
+   docs/Software/Motors.rst
+   docs/Software/DiffDrive.rst
+   docs/Software/SwerveDrive.rst
    docs/Software/Pneumatics.rst
    docs/Software/GearShifting.rst
    docs/Software/Sensors.rst

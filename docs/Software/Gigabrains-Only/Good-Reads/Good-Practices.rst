@@ -19,29 +19,6 @@ Reading it will literally make your brain expand. It will change the way you vie
 If 400 pages is too much for you, I compiled Robert Martin's points which are most relevant to you (though you should try to read the whole book)
 
 
-* `Good Practices <#good-practices>`_
-* `Clean Code <#clean-code>`_
-
-  * `Meaningful Names <#meaningful-names>`_
-
-    * `Use Intention-Revealing Names <#use-intention-revealing-names>`_
-    * `Avoid Disinformation <#avoid-disinformation>`_
-    * `Make Meaningful Distinctions <#make-meaningful-distinctions>`_
-    * `Member Prefixes <#member-prefixes>`_
-    * `Avoid Mental Mapping <#avoid-mental-mapping>`_
-
-  * `Methods <#methods>`_
-
-    * `Use Descriptive Names <#use-descriptive-names>`_
-    * `Have No Side Effects <#have-no-side-effects>`_
-
-  * `Comments <#comments>`_
-
-    * `Comments Do Not Make Up for Bad Code <#comments-do-not-make-up-for-bad-code>`_
-    * `Explain Yourself in Code <#explain-yourself-in-code>`_
-    * `Informative Comments <#informative-comments>`_
-    * `Don't use a Comment When You Can Use a Function or Variable <#dont-use-a-comment-when-you-can-use-a-function-or-variable>`_
-
 Clean Code
 ==========
 
