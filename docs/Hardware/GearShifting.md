@@ -8,7 +8,7 @@ When creating a robot, we want to be able to change its speed. In order to chang
 
 When driving the robot, we want to have the ability to adjust our speed to best suit our current scenario, whether we’re trying to score, helping an ally team, or simply move around. Gear Shifting enables us to change our speed (along with our resistance to moving to an external force, say another robot crashing into us) while we play a game. It’s an incredibly useful tool for us when we’re trying to properly move around and it’s a relatively simple thing to implement.
 
-# Hardware Aspects
+## Hardware Aspects
 
 gear ra·ti·o - (in a gearbox, transmission, etc.) the ratio between the rates at which the last and first gears rotate.
 

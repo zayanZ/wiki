@@ -1,4 +1,4 @@
-# Hardware Implementation
+# Sensors
 
 ## Proximity Sensors
 
