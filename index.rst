@@ -6,13 +6,12 @@ Team 3624 Wiki
    :hidden:
    :caption: Hardware
 
-   docs/Hardware/Tools.rst
-   docs/Hardware/Electronics.rst
-   docs/Hardware/TankDrive.rst
-   docs/Hardware/SwerveDrive.rst
-   docs/Hardware/GearShifting.rst
-   docs/Hardware/Pneumatics.rst
-   docs/Hardware/Sensors.rst
+   docs/Hardware/Tools
+   docs/Hardware/Electronics
+   docs/Hardware/DriveBase
+   docs/Hardware/GearShifting
+   docs/Hardware/Pneumatics
+   docs/Hardware/Sensors
 
 
 .. toctree::
@@ -27,17 +26,16 @@ Team 3624 Wiki
    :hidden:
    :caption: Software
 
-   docs/Software/Installation.rst
-   docs/Software/Motors.rst
-   docs/Software/DriveBase.rst
-   docs/Software/Pneumatics.rst
-   docs/Software/GearShifting.rst
-   docs/Software/Sensors.rst
-   docs/Software/Limelight.rst
-   docs/Software/PID.rst
-   docs/Software/Shooters.rst
-   docs/Software/Autonomous.rst
-   docs/Software/Competition.rst
+   docs/Software/Installation
+   docs/Software/Motors
+   docs/Software/Pneumatics
+   docs/Software/GearShifting
+   docs/Software/Sensors
+   docs/Software/Limelight
+   docs/Software/PID
+   docs/Software/Shooters
+   docs/Software/Autonomous
+   docs/Software/Competition
 
 .. toctree::
    :maxdepth: 5
@@ -47,6 +45,6 @@ Team 3624 Wiki
    docs/Software/Gigabrains-Only/Good-Reads/CleanCode
    docs/Software/Gigabrains-Only/Advanced-Maths
    docs/Software/Gigabrains-Only/Good-Reads/ControlsEngineering
-   docs/Software/Gigabrains-Only/Good-Reads/FRC Documentation
+   docs/Software/Gigabrains-Only/Good-Reads/FRC-Documentation
    docs/Software/Gigabrains-Only/Good-Reads/Git-(Pros-only)
    docs/Software/Gigabrains-Only/Pro-Guide-to-VSCode/Workspaces
