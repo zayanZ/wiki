@@ -1,5 +1,4 @@
-
-FRC Documentation
+FRC Docs
 =================
 
 `This <https://docs.wpilib.org/en/latest/>`_ is the official documentation for WPILib. If you want to become gigantic-minded, I highly suggest you just look through it and find things that interest you. If you're not up to that, I compiled a list of pages which I think you should read.
