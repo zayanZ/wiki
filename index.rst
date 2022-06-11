@@ -13,9 +13,9 @@ Team 3624 Wiki
    :hidden:
    :caption: Hardware
 
-   Hardware/GearShifting.rst
-   Hardware/Pneumatics.rst
-   Hardware/Sensors.rst
+   docs/Hardware/GearShifting.rst
+   docs/Hardware/Pneumatics.rst
+   docs/Hardware/Sensors.rst
 
 
 .. toctree::
@@ -23,35 +23,35 @@ Team 3624 Wiki
    :hidden:
    :caption: Safety
 
-   Safety/Placeholder
+   docs/Safety/Placeholder
 
 .. toctree::
    :maxdepth: 3
    :hidden:
    :caption: Software
 
-   Software/Installation.rst
-   Software/MotorsDrive.rst<Motors and Drive>
-   Software/Pneumatics.rst
-   Software/GearShifting.rst
-   Software/Sensors.rst
-   Software/Limelight.rst
-   Software/PID.rst
-   Software/Shooters.rst
-   Software/Autonomous.rst
-   Software/Competition.rst
+   docs/Software/Installation.rst
+   docs/Software/MotorsDrive.rst<Motors and Drive>
+   docs/Software/Pneumatics.rst
+   docs/Software/GearShifting.rst
+   docs/Software/Sensors.rst
+   docs/Software/Limelight.rst
+   docs/Software/PID.rst
+   docs/Software/Shooters.rst
+   docs/Software/Autonomous.rst
+   docs/Software/Competition.rst
 
 .. toctree::
    :maxdepth: 3
    :hidden:
    :caption: Advanced Software
 
-   Software/Gigabrains-Only/Advanced-Maths<Advanced Math>
-   Software/Gigabrains-Only/Good-Reads/ControlsEngineering<Controls Engineering>
-   Software/Gigabrains-Only/Good-Reads/FRC Documentation<FRC Docs>
-   Software/Gigabrains-Only/Good-Reads/Git-(Pros-only)<Pro Git Use>
-   Software/Gigabrains-Only/Good-Reads/Good Practices<Good Practices>
-   Software/Gigabrains-Only/Pro-Guide-to-VSCode/Workspaces<VSCode Workspaces>
+   docs/Software/Gigabrains-Only/Advanced-Maths<Advanced Math>
+   docs/Software/Gigabrains-Only/Good-Reads/ControlsEngineering<Controls Engineering>
+   docs/Software/Gigabrains-Only/Good-Reads/FRC Documentation<FRC Docs>
+   docs/Software/Gigabrains-Only/Good-Reads/Git-(Pros-only)<Pro Git Use>
+   docs/Software/Gigabrains-Only/Good-Reads/Good Practices<Good Practices>
+   docs/Software/Gigabrains-Only/Pro-Guide-to-VSCode/Workspaces<VSCode Workspaces>
 
 .. toctree::
    :maxdepth: 2
