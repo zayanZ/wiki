@@ -1,23 +1,10 @@
 
-Software Implementation
+Sensors
 =======================
 
+So far in the lessons, we've been discussing moving parts of the robot which cause changes to the robot, whether it be its position in the field, the velocity of its motors, or the status of a solenoid. 
 
-* `DigitalInput <#DigitalInput>`_
-
-  * `DigitalInput Objects <#DigitalInput-Objects>`_
-  * `.get() <#.get(>`_\ )
-
-* `NavX IMU <#NavX-IMU>`_
-
-  * `MotionSensor Class <#MotionSensor-Class>`_
-
-* `Color Sensor <#Color-Sensor>`_
-
-  * `Color Sensor Objects <#Color-Sensor-Objects>`_
-  * `Usage <#Usage>`_
-
-* `Former Director Comments <#Former-Director-Comments-(only-edit-if-you-are-a-current-director>`_\ )
+What about detecting a change in the robot? This is where sensors come in.
 
 DigitalInput
 ------------

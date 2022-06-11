@@ -1,5 +1,4 @@
-
-Hardware Aspects
+Gear Shifting
 ================
 
 gear ra·ti·o - (in a gearbox, transmission, etc.) the ratio between the rates at which the last and first gears rotate.

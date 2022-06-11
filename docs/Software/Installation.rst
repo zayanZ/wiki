@@ -89,8 +89,8 @@ Phoenix Library
 `Download Link <https://www.ctr-electronics.com/hro.html#product_tabs_technical_resources>`_
 
 
-.. image:: Images/phoenix-installer-download-location.jpg
-   :target: Images/phoenix-installer-download-location.jpg
+.. image:: img/intro/phoenix-installer-download-location.jpg
+   :target: img/intro/phoenix-installer-download-location.jpg
    :alt: Location of the phoenix installer on the website
 
 

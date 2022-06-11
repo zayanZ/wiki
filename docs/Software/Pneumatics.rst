@@ -2,7 +2,7 @@
 Software Implementation
 =======================
 
-Hopefully you've read about how pneumatics works. Knowing this will aid you when debugging code and trying to figure out why something controlled by pneumatics is not working (Build team screws up too, contrary to popular belief).
+Pneumatics is ia branch of engineering which deal with gas or pressurized air. In simpler terms, we're dealing with moving air around to do a certain task.
 
 
 * `Pneumatics Control Module (PCM) <#Pneumatics-Control-Module>`_

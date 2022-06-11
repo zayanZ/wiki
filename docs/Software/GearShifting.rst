@@ -2,26 +2,23 @@
    :format: html
 
 
+Gear Shifting
+=============
+
+What is Gear Shifting
+---------------------
+
+When creating a robot, we want to be able to change its speed. In order to change its speeds, we need to be able to shift between a "low gear", a "high gear", and occasionaly an extra "gear", similar to a car.
+
+For more info on how it works, refer to `this <Hardware_Aspects.md>`_ for hardware aspects and `this <Software_Implementation.md>`_ for how to implement it in our code.
+
+Why do we use Gear Shifting
+---------------------------
+
+When driving the robot, we want to have the ability to adjust our speed to best suit our current scenario, whether we're trying to score, helping an ally team, or simply move around. Gear Shifting enables us to change our speed (along with our resistance to moving to an external force, say another robot crashing into us) while we play a game. It's an incredibly useful tool for us when we're trying to properly move around and it's a relatively simple thing to implement.
+
 Software Implementation
-=======================
-
-
-* `Ways to Implement Gear Shifting <#Ways-to-Implement-Gear-Shifting>`_
-
-  * `Pneumatics <#**Pneumatics**>`_
-  * `Software Multipliers (Speed Shifting) <#**Software-Multipliers**>`_
-
-* `When to Implement Which Type <#When-to-Implement-Which-Type>`_
-* `Past Code Examples <#Past-Code-Examples>`_
-
-  * `Solenoid Shift <#**Solenoid-Shift**>`_
-  * `Software Multipliers (Speed Shifting) <#**Software-Multipliers-(Speed-Shifting>`_\ **)
-
-* `Advanced Usages <#Advanced-Usages>`_
-* `Former Director Comments <#Former-Director-Comments-(only-edit-if-you-are-a-current-director>`_\ )
-
-Ways to Implement Gear Shifting
--------------------------------
+-----------------------
 
 **Pneumatics**
 ^^^^^^^^^^^^^^^^^^
@@ -109,7 +106,7 @@ Now, you after learning about these two different techniques, you may want to us
 
 There isn't much purpose to have the two types of shifting work alongside one another since it increses complexity greatly for the driver. While it may seem like a good idea at first, overall it's a bad idea due to the increased skill and coordination between drivers and the increased training for something that should be simple. Unless it's necessary for the robot in a edge case, using both styles alongside one another is not recommendable at all.
 
-Former Director Comments (only edit if you are a current director)
+Former Director Comments
 ------------------------------------------------------------------
 
 Kyle

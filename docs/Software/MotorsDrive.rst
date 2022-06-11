@@ -1,21 +1,15 @@
 
+Motors & Drive
+==============
+
+This section of the wiki is arguably the most important of the sections, and thankfully is also one of the simplest. Motor control and drive are not hard topics, and are rather simple to implement.
+
+When we talk about motor control, we're talking about how our code interacts with the motor controllers which are wired up to the motors. 
+
+CTRE has its own `documentation <https://docs.ctre-phoenix.com/en/latest/index.html>`_ which I'd suggest checking out, and this moreso serves for a basic usage of motors.
+
 Cross the Road Electronics (CTRE) Controllers
 =============================================
-
-
-* `Single Motor <#Single-Motor-Control>`_
-
-  * `Objects <#Motor-Objects>`_
-  * `Control <#Controlling>`_
-
-* `Differential Drive <#Differential-Drive>`_
-
-  * `Objects <#DiffDrive-Objects>`_
-  * `Master/Slave <#Master/Slave>`_
-  * `arcadeDrive() <#arcadeDrive(>`_\ )
-
-* `Commands <#Commands>`_
-* `Former Director Comments <#Former-Director-Comments-(only-edit-if-you-are-a-current-director>`_\ )
 
 Single Motor Control
 --------------------
@@ -111,3 +105,17 @@ As for controlling a singular motor, the process is similar, just using the resp
 
 Former Director Comments (only edit if you are a current director)
 ------------------------------------------------------------------
+
+Rev Robotics
+============
+
+Drive Types
+===========
+
+Differential Drive
+------------------
+While Differential Drive is by far our most popular drive type, we sometimes opt to use a different method of driving for our robot. The most notable (and most destructive to the cafeteria floors...) is MecanumDrive, seen most recently on 2014's Aerial Assist robot. We will cover these alternative types in this file.
+
+Mecanum Drive
+-------------
+Will tackle this later in the year, more important to cover other aspects of our wiki first. In the event no one ever actually updated this (which is more than possible lol) here's the `Aerial Assist Code <https://github.com/frc3624/aerial-assist>`_ as well as the `official docs <https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/drive/MecanumDrive.html>`_.
