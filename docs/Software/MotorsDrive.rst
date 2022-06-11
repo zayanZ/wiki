@@ -1,4 +1,3 @@
-
 Motors & Drive
 ==============
 
@@ -103,19 +102,7 @@ The negation of certain parameters depends mostly on the specific use case. Some
 
 As for controlling a singular motor, the process is similar, just using the respective method you created to activate the motor. You might also want to add a line in the ``end()`` method calling the aforementioned method to power off the motor (typically just by passing a 0 as a parameter).
 
-Former Director Comments (only edit if you are a current director)
-------------------------------------------------------------------
-
-Rev Robotics
+Swerve Drive
 ============
 
-Drive Types
-===========
-
-Differential Drive
-------------------
-While Differential Drive is by far our most popular drive type, we sometimes opt to use a different method of driving for our robot. The most notable (and most destructive to the cafeteria floors...) is MecanumDrive, seen most recently on 2014's Aerial Assist robot. We will cover these alternative types in this file.
-
-Mecanum Drive
--------------
-Will tackle this later in the year, more important to cover other aspects of our wiki first. In the event no one ever actually updated this (which is more than possible lol) here's the `Aerial Assist Code <https://github.com/frc3624/aerial-assist>`_ as well as the `official docs <https://first.wpi.edu/FRC/roborio/beta/docs/java/edu/wpi/first/wpilibj/drive/MecanumDrive.html>`_.
+This is the next evolution in our drive base for the team. We will document stuff once we do more research, including code examples

@@ -6,6 +6,9 @@ Team 3624 Wiki
    :hidden:
    :caption: Hardware
 
+   docs/Hardware/Tools.rst
+   docs/Hardware/Electronics.rst
+   docs/Hardware/DriveBase.rst
    docs/Hardware/GearShifting.rst
    docs/Hardware/Pneumatics.rst
    docs/Hardware/Sensors.rst
@@ -24,7 +27,7 @@ Team 3624 Wiki
    :caption: Software
 
    docs/Software/Installation.rst
-   docs/Software/MotorsDrive.rst<Motors and Drive>
+   docs/Software/MotorsDrive.rst
    docs/Software/Pneumatics.rst
    docs/Software/GearShifting.rst
    docs/Software/Sensors.rst
