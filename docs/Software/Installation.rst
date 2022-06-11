@@ -8,23 +8,12 @@ Programs to Install
 You should be using a Windows computer. You can definitely use a Mac or a Linux computer (With a distro that can use VS Code), but you will only be able to write code for the robot. You won't be able to use FRC's programs which let you use the robot. You'll have to use one of the team's laptops if you want to turn on the robot and drive it.
 
 
-* `Programs to Install <#programs-to-install>`_
-
-  * `Java <#java>`_
-  * `FRC Game Tools <#frc-game-tools>`_
-  * `Visual Studio Code <#visual-studio-code>`_
-  * `Visual Studio Code Extensions <#visual-studio-code-extensions>`_
-  * `Github Desktop <#github-desktop>`_
-  * `Git (Git Bash) <#git-git-bash>`_
-  * `Phoenix Library <#phoenix-library>`_
-  * `Rev Hardware Client <#Rev-Hardware-Client>`_
-
 Java
 ----
 
 `Download Link <https://adoptopenjdk.net/>`_
 
-As of the 2020 season, you are supposed to get Java 11. This is not the newest version. Yes, every version of Java is backwards compatible, but sometimes we encounter things that don't support the newest version of Java... somehow...
+As of the 2023 season, you are supposed to get Java 11. This is not the newest version. Yes, every version of Java is backwards compatible, but sometimes we encounter things that don't support the newest version of Java... somehow...
 
 FRC Game Tools
 --------------

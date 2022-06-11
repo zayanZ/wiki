@@ -1,17 +1,17 @@
 Gear Shifting
 ================
 
-gear ra·ti·o - (in a gearbox, transmission, etc.) the ratio between the rates at which the last and first gears rotate.
+What is Gear Shifting
+---------------------
 
-What does this even mean? To understand what this means, first you need to understand what it looks like in the gear box
+When creating a robot, we want to be able to change its speed. In order to change its speeds, we need to be able to shift between a "low gear", a "high gear", and occasionaly an extra "gear", similar to a car.
 
+For more info on how it works, refer to `this <Hardware_Aspects.md>`_ for hardware aspects and `this <Software_Implementation.md>`_ for how to implement it in our code.
 
-.. image:: https://qph.fs.quoracdn.net/main-qimg-7a3e7700c0abc87f8ae3ca4299003fae-c
-   :target: https://qph.fs.quoracdn.net/main-qimg-7a3e7700c0abc87f8ae3ca4299003fae-c
-   :alt: 
+Why do we use Gear Shifting
+---------------------------
 
-
-uhhh let's simplify it a little bit
+When driving the robot, we want to have the ability to adjust our speed to best suit our current scenario, whether we’re trying to score, helping an ally team, or simply move around. Gear Shifting enables us to change our speed (along with our resistance to moving to an external force, say another robot crashing into us) while we play a game. It’s an incredibly useful tool for us when we’re trying to properly move around and it’s a relatively simple thing to implement.
 
 
 .. image:: https://www.researchgate.net/profile/Aghil-Yousefi-Koma/publication/267488568/figure/fig4/AS:324268555554818@1454323056198/schematic-of-the-rear-pulley-in-two-states-low-gear-and-high-gear.png

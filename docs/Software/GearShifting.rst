@@ -2,20 +2,6 @@
    :format: html
 
 
-Gear Shifting
-=============
-
-What is Gear Shifting
----------------------
-
-When creating a robot, we want to be able to change its speed. In order to change its speeds, we need to be able to shift between a "low gear", a "high gear", and occasionaly an extra "gear", similar to a car.
-
-For more info on how it works, refer to `this <Hardware_Aspects.md>`_ for hardware aspects and `this <Software_Implementation.md>`_ for how to implement it in our code.
-
-Why do we use Gear Shifting
----------------------------
-
-When driving the robot, we want to have the ability to adjust our speed to best suit our current scenario, whether we're trying to score, helping an ally team, or simply move around. Gear Shifting enables us to change our speed (along with our resistance to moving to an external force, say another robot crashing into us) while we play a game. It's an incredibly useful tool for us when we're trying to properly move around and it's a relatively simple thing to implement.
 
 Software Implementation
 -----------------------
@@ -27,7 +13,6 @@ In order to utilize gear shift, you must create a subsystem and a command. Withi
 
 This style of gear shifting will most commonly be used on simpler robot designs. The more complex the robot becomes, the harder it is for build to utilize the pneumatics required for the gear shifting. Usually this style will be used (as it has been the main style throughout our team's history) but it may not be used if the robot design gets too complex.
 
-// Can be longer in the future, just leaving it barebones and pretty simple for now since this is going to be a first draft
 
 **Software Multipliers**
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -38,7 +23,6 @@ The first time the team used software speed shifting was with the robot for Infi
 
 After creating the method, create as many commands as necessary in the commands folder (most likely 1-3, depending if you want a toggle command, or buttons to switch between individual modes).
 
-// Can be longer in the future, just leaving it barebones and pretty simple for now since this is going to be a first draft
 
 When to Implement Which Type
 ----------------------------

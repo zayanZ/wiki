@@ -81,10 +81,10 @@ Derivative
 * Prematurely alters the rate of change to prevent overshooting
 
 Advanced Integrators
-====================
+--------------------
 
 Vocabulary
-----------
+^^^^^^^^^^
 
 Plants can be broken into two fundamental parts:
 
@@ -104,8 +104,7 @@ In a motor with a PID controller, the PID controller is fed a constant error and
 All non linear actuators suffer from saturation, and all real life systems are non linear.
 
 Integral Windup
----------------
-
+^^^^^^^^^^^^^^^
 
 .. image:: img/pid/Integral_Windup.jpg
    :target: img/pid/Integral_Windup.jpg
@@ -121,7 +120,7 @@ However, once it it let go, the error barrels towards 0 and the integral term ra
 Three popular methods to combat integral windup are: Clamping, Back-Calculation, and the Observer Approach. We will discuss Clamping.
 
 Clamping
---------
+^^^^^^^^
 
 
 .. image:: img/pid/Clamping_Diagram.jpg
