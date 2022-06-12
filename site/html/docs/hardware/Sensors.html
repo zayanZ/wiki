@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sensors &mdash; Wiki  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bumpers" href="Bumpers.html" />
+    <link rel="prev" title="Pneumatics" href="Pneumatics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Wiki
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Hardware</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Electronics.html">Electronics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DriveBase.html">Drive Bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GearShifting.html">Gear Shifting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pneumatics.html">Pneumatics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sensors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#proximity-sensors">Proximity Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#encoders">Encoders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accelerometers">Accelerometers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gyroscopes">Gyroscopes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Bumpers.html">Bumpers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Safety</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../safety/Placeholder.html">Safety</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/intro/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/motors/index.html">Motors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/drive/index.html">Drive Bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/pneumatics/index.html">Pneumatics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/gearshift/index.html">Gear Shift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/sensors/index.html">Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/limelight/index.html">Limelight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/pid/index.html">Control Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/shooters/index.html">Shooters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/auto/index.html">Autonomous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/competition/index.html">Competition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/advanced/index.html">Advanced Software</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Sensors</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/docs/hardware/Sensors.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="sensors">
+<h1>Sensors<a class="headerlink" href="#sensors" title="Permalink to this heading"></a></h1>
+<div class="section" id="proximity-sensors">
+<h2>Proximity Sensors<a class="headerlink" href="#proximity-sensors" title="Permalink to this heading"></a></h2>
+<p>Proximity Sensors are an incredibly important set of sensors. Their job is to act as a switch to detect when something comes in range of the robot. There are many types of proximity switches, but we’ll cover two common types:</p>
+<p>Limit Switches are switches which activate when the button on them trigger from contact. They are especially useful when using a simple method to detect if an item has come in the path of the robot. You may see them used to prevent a motor from overextending.</p>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/_images/limit-switch-to-roborio.svg"><img src="https://docs.wpilib.org/en/stable/_images/limit-switch-to-roborio.svg" width="250"/></a></p>
+<p>Photoelectric switches are incredibly different from the former due to the fact they are contactless. Their job is to detect changes in light and tell the robot if the light levels pass a certain threshold.</p>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/_images/ir-digital-obstacle-sensor-to-roborio.svg"><img src="https://docs.wpilib.org/en/stable/_images/ir-digital-obstacle-sensor-to-roborio.svg" width="250"/></a></p>
+</div>
+<div class="section" id="encoders">
+<h2>Encoders<a class="headerlink" href="#encoders" title="Permalink to this heading"></a></h2>
+<p>Encoders are a type of sensor which are integrated within our motors, but we’ll still cover them briefly here.</p>
+<p>Say you’re given a motor, and you want to make it turn 5 centimeters. How would you do that? The motor has no way of determining how far it has gone and there’s no real way to find this using the motor alone. This is where encoders come into play.</p>
+<p>An encoder’s job is to keep track of how far the motor has traveled, sending a signal whenever its position changes, which we can record as an increase or decrease for the position of the motor. This is done by the encoder rotating and detecting a change. It has two channels, and when used in conjunction, we can see which channel is “leading”, indicating the direction of the motor.</p>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/_images/encoding-direction.png"><img src="https://docs.wpilib.org/en/stable/_images/encoding-direction.png" width="500"/></a></p>
+<p>There are several types, but magnetic encoders tend to be common. Here’s a picture of one:</p>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/_images/ctre-magnetic-encoder.png"><img src="https://docs.wpilib.org/en/stable/_images/ctre-magnetic-encoder.png" width="250"/></a></p>
+</div>
+<div class="section" id="accelerometers">
+<h2>Accelerometers<a class="headerlink" href="#accelerometers" title="Permalink to this heading"></a></h2>
+<p>Accelerometers are sensors which measure acceleration. Sometimes they will be for only one dimension, but most commonly you’ll see them as triple-axis accelerometers. These come in different shapes and forms, with some going through the analog in port, separate boards known as Inertial Measurement Units (IMUs), or the integrated accelerometer present in the roboRIO itself. Here are diagrams of some accelerometers:</p>
+<p><a class="reference external" href="https://docs.wpilib.org/en/stable/_images/adxl193-single-axis-accelerometer-to-roborio.svg"><img src="https://docs.wpilib.org/en/stable/_images/adxl193-single-axis-accelerometer-to-roborio.svg" width="250"/></a>
+<a class="reference external" href="https://docs.wpilib.org/en/stable/_images/triple-axis-accelerometer-to-roborio.svg"><img src="https://docs.wpilib.org/en/stable/_images/triple-axis-accelerometer-to-roborio.svg" width="250"/></a>
+<a class="reference external" href="https://docs.wpilib.org/en/stable/_images/roborio-accelerometer.svg"><img src="https://docs.wpilib.org/en/stable/_images/roborio-accelerometer.svg" width="300"/></a>
+<a class="reference external" href="https://docs.wpilib.org/en/stable/_images/navx-imu-to-roborio-mxp.svg"><img src="https://docs.wpilib.org/en/stable/_images/navx-imu-to-roborio-mxp.svg" width="300"/></a></p>
+<p>We tend to use IMUs like the Kauai Labs NavX, seen on 2014’s Aerial Assist robot.</p>
+<p>One shortcoming of accelerometers is that they aren’t very useful for other time derivatives of position such as displacement or velocity. This is due to their clock speed not enabling them to refresh fast enough. When their readings are integrated, we use a Riemann Sum so they fall short in regards to accuracy. For example, the NavX only updates 200 times a second, or .005 seconds. This may sound fast on paper, but a lot of movement can happen in that short time. If you don’t understand calculus, basically the issue is that we use an already slightly inaccurate method for calculating the velocity/displacement when we start with acceleration. When we compound this with the time frame allowed, it results in a non ideal result for us.</p>
+</div>
+<div class="section" id="gyroscopes">
+<h2>Gyroscopes<a class="headerlink" href="#gyroscopes" title="Permalink to this heading"></a></h2>
+<p>The job of a gyroscope is to determine the rate of rotation of a robot. They are useful to stabilizer driving or to measure tilt of a certain object. These are typically used in conjunction with accelerometers. We tend to use the NavX (the purple board) shown before for gyro control.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Pneumatics.html" class="btn btn-neutral float-left" title="Pneumatics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Bumpers.html" class="btn btn-neutral float-right" title="Bumpers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Team 3624, 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

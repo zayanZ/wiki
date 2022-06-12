@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is PID? &mdash; Wiki  documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Overview" href="PID.html" />
+    <link rel="prev" title="Control Theory" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> Wiki
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/Tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/Electronics.html">Electronics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/DriveBase.html">Drive Bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/GearShifting.html">Gear Shifting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/Pneumatics.html">Pneumatics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/Sensors.html">Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/Bumpers.html">Bumpers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Safety</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../safety/Placeholder.html">Safety</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../motors/index.html">Motors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../drive/index.html">Drive Bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pneumatics/index.html">Pneumatics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gearshift/index.html">Gear Shift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/index.html">Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../limelight/index.html">Limelight</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Control Theory</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">What is PID?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PID.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Advanced.html">Advanced Integrators</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../shooters/index.html">Shooters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../auto/index.html">Autonomous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../competition/index.html">Competition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced/index.html">Advanced Software</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Control Theory</a> &raquo;</li>
+      <li>What is PID?</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/docs/software/pid/Introduction.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="what-is-pid">
+<h1>What is PID?<a class="headerlink" href="#what-is-pid" title="Permalink to this heading"></a></h1>
+<p>With speed controllers, we are only able to control how much voltage we let the motor use. Normally, we are not able to make the motor turn a specified distance or rotate at some velocity, but some really smart guy invented encoders. Encoders are sensors that can see how much the motor rotated. We can plug the readings of the encoder into a funky formula, and if you want to bring the motor to some position, it will calculate the speed of the motor, and if you want to bring the motor to some velocity, it will calculate the acceleration of the motor.</p>
+<p>The specifics of the equation don’t really matter (I hope…), but what does matter is what you control - kP, kI, and kD.
+You can see the effect of changing each one <a class="reference external" href="https://www.youtube.com/watch?v=fusr9eTceEo&amp;list=WL&amp;index=2&amp;t=0s">here</a>.
+You can experiment with the values using an online simulator, with <a class="reference external" href="https://sites.google.com/site/fpgaandco/pid">this one being my favorite</a>.</p>
+<p>In the second example, I got P=10, I=0, D=4. It doesn’t have to be like my PID at all, as long as the car doesn’t overshoot the target, oscillate that badly, or get critically damped.
+You may want different PIDs depending on what you are doing. You may want to tailor your PID to small changes or large changes depending on how the motor is going to be used.
+If you look at the car parameters section, there is “motor force limit(N)”. This limits how fast the car can accelerate. In real life, this may be a physical limit of the motor or you, the programmer, could have put a limit on how fast it accelerate in the code.</p>
+<p>If you are interested in learning more about the equation, I found <a class="reference external" href="http://robotsforroboticists.com/pid-control/">this resource</a> very helpful because not only does it give a good explanation, but it also gives you the code version of the formula.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Control Theory" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="PID.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Team 3624, 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

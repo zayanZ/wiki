@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean Code &mdash; Wiki  documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Controls Engineering" href="ControlsEngineering.html" />
+    <link rel="prev" title="Advanced Software" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> Wiki
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Hardware</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/Tools.html">Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/Electronics.html">Electronics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/DriveBase.html">Drive Bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/GearShifting.html">Gear Shifting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/Pneumatics.html">Pneumatics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/Sensors.html">Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/Bumpers.html">Bumpers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Safety</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../safety/Placeholder.html">Safety</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../motors/index.html">Motors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../drive/index.html">Drive Bases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pneumatics/index.html">Pneumatics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gearshift/index.html">Gear Shift</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../sensors/index.html">Sensors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../limelight/index.html">Limelight</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pid/index.html">Control Theory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../shooters/index.html">Shooters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../auto/index.html">Autonomous</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../competition/index.html">Competition</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Advanced Software</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Clean Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preface">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intro">Intro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#meaningful-names">Meaningful Names</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#use-intention-revealing-names">Use Intention-Revealing Names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#avoid-disinformation">Avoid Disinformation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-meaningful-distinctions">Make Meaningful Distinctions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#member-prefixes">Member Prefixes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#avoid-mental-mapping">Avoid Mental Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#use-descriptive-names">Use Descriptive Names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#have-no-side-effects">Have No Side Effects</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#comments">Comments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#comments-do-not-make-up-for-bad-code">Comments Do Not Make Up for Bad Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#explain-yourself-in-code">Explain Yourself in Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#informative-comments">Informative Comments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#don-t-use-a-comment-when-you-can-use-a-function-or-variable">Don’t use a Comment When You Can Use a Function or Variable</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ControlsEngineering.html">Controls Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FRC-Documentation.html">FRC Docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProGit.html">Git Pro Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AdvancedMaths.html">Advanced Math</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../vscode-tips/Workspaces.html">Workspaces</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Wiki</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../index.html">Advanced Software</a> &raquo;</li>
+      <li>Clean Code</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/docs/software/advanced/read/CleanCode.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="clean-code">
+<h1>Clean Code<a class="headerlink" href="#clean-code" title="Permalink to this heading"></a></h1>
+<div class="section" id="preface">
+<h2>Preface<a class="headerlink" href="#preface" title="Permalink to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/ontiyonke/book-1/blob/master/%5BPROGRAMMING%5D%5BClean%20Code%20by%20Robert%20C%20Martin%5D.pdf">Clean Code PDF</a></p>
+<p>I know you don’t feel nearly as passionate as I do about writing clean code. You may not even think it matters because we’re only creating a robot that’s a dozen files large, not hundreds like in an enterprise setting. But our small setting should only make you want to make our code clean even more because it’s so easy to make it that way. You probably don’t really understand what “clean code” really is, and I pity you for that. Go into any project you didn’t make try to understand it. Part of the quest of Clean Code is to make code easily understandable from an outside perspective.</p>
+<p>Read Clean Code.</p>
+<p>Just read Clean Code.</p>
+<p>It’s a really good book.</p>
+<p>Please…</p>
+<p>Reading it will literally make your brain expand. It will change the way you view coding. If you don’t quite understand something he mentions, look it up and your brain will expand even more.</p>
+<p>If 400 pages is too much for you, I compiled Robert Martin’s points which are most relevant to you (though you should try to read the whole book)</p>
+</div>
+<div class="section" id="intro">
+<h2>Intro<a class="headerlink" href="#intro" title="Permalink to this heading"></a></h2>
+<blockquote>
+<div><p>I could list all of the qualities that I notice in clean code, but there is one overarching quality that leads to all of them. Clean code always looks like it was written by someone who cares. There is nothing obvious that you can do to make it better. All of those things were thought about by the code’s author, and if you try to imagine improvements, you’re led back to where you are, sitting in appreciation of the code someone left for you—code left by someone who cares deeply about the craft.</p>
+<p>- Micheal Feathers</p>
+</div></blockquote>
+<p>Writing clean code requires the disciplined use of a myriad little techniques applied through a painstakingly acquired sense of “cleanliness.” This “code-sense” is the key. Some of us are born with it. Some of us have to fight to acquire it. Not only does it let us see whether code is good or bad, but it also shows us the strategy for applying our discipline to transform bad code into clean code.</p>
+<p>A programmer without “code-sense” can look at a messy module and recognize the mess but will have no idea what to do about it. A programmer with“code-sense” will look at a messy module and see options and variations. The “code-sense” will help that programmer choose the best variation and guide him or her to plot a sequence of behavior preserving transformations to get from here to there.</p>
+<p>In short, a programmer who writes clean code is an artist who can take a blank screen through a series of transformations until it is an elegantly coded system.</p>
+</div>
+<div class="section" id="meaningful-names">
+<h2>Meaningful Names<a class="headerlink" href="#meaningful-names" title="Permalink to this heading"></a></h2>
+<p>PascalCase for classes, camelCase for methods and variable names.</p>
+<p>Classes should have nouns or noun phrases like <code class="docutils literal notranslate"><span class="pre">Customer</span></code>, <code class="docutils literal notranslate"><span class="pre">WikiPage</span></code>, <code class="docutils literal notranslate"><span class="pre">Account</span></code>, and <code class="docutils literal notranslate"><span class="pre">AddressParser</span></code>.</p>
+<p>Methods should have verbs or verb phrases <code class="docutils literal notranslate"><span class="pre">postPayment</span></code>, <code class="docutils literal notranslate"><span class="pre">deletePage</span></code>, or <code class="docutils literal notranslate"><span class="pre">save</span></code>. Accessors, mutators, and predicates should be named for their value and prefixed with <code class="docutils literal notranslate"><span class="pre">get</span></code>, <code class="docutils literal notranslate"><span class="pre">set</span></code>, and <code class="docutils literal notranslate"><span class="pre">is</span></code> according to the <a class="reference external" href="http://www.java2s.com/Tutorial/SCJP/0120__Object-Oriented/JavaBeansNamingConvention.htm">javabean standard</a>.</p>
+<div class="section" id="use-intention-revealing-names">
+<h3>Use Intention-Revealing Names<a class="headerlink" href="#use-intention-revealing-names" title="Permalink to this heading"></a></h3>
+<p>It is easy to say that names should reveal intent. What we want to impress upon you is that we are serious about this. Choosing good names takes time but saves more than it takes. So take care with your names and change them when you find better ones. Everyone who reads your code (including you) will be happier if you do. The name of a variable, function, or class, should answer all the big questions. It should tell you why it exists, what it does, and how it is used. If a name requires a comment, then the name does not reveal its intent.</p>
+<p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">d;</span> <span class="pre">//</span> <span class="pre">elapsed</span> <span class="pre">time</span> <span class="pre">in</span> <span class="pre">days</span></code></p>
+<p>The name d reveals nothing. It does not evoke a sense of elapsed time, nor of days. We should choose a name that specifies what is being measured and the unit of that measurement:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">elapsedTimeInDays</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">daysSinceCreation</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">daysSinceModification</span><span class="p">;</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">fileAgeInDays</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Choosing names that reveal intent can make it much easier to understand and change code. What is the purpose of this code?</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="nf">getThem</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">list1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">theList</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">list1</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">list1</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Why is it hard to tell what this code is doing? There are no complex expressions. Spacing and indentation are reasonable. There are only three variables and two constants mentioned. There aren’t even any fancy classes or polymorphic methods, just a list of arrays (or so it seems). The problem isn’t the simplicity of the code but the implicity of the code (to coin a phrase): the degree to which the context is not explicit in the code itself. The code implicitly requires that we know the answers to questions such as:</p>
+<ol class="arabic simple">
+<li><p>What kinds of things are in theList?</p></li>
+<li><p>What is the significance of the zeroth item in theList?</p></li>
+<li><p>What is the significance of the value 4?</p></li>
+<li><p>How would I use the list being returned?</p></li>
+</ol>
+<p>The answers to these questions are not present in the code sample, but they could have been. Say that we’re working in a mine sweeper game. We find that the board is a list of cells called theList. Let’s rename that to gameBoard. Each cell on the board is represented by a simple array. We further find that the zeroth subscript is the location of a status value and that a status value of 4 means “flagged.” Just by giving these concepts names we can improve the code considerably:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="nf">getFlaggedCells</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span><span class="w"> </span><span class="n">flaggedCells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">[]&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">cell</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">gameBoard</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cell</span><span class="o">[</span><span class="n">STATUS_VALUE</span><span class="o">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">FLAGGED</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">flaggedCells</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">flaggedCells</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Notice that the simplicity of the code has not changed. It still has exactly the same number of operators and constants, with exactly the same number of nesting levels. But the code has become much more explicit. We can go further and write a simple class for cells instead of using an array of ints. It can include an intention-revealing function (call it isFlagged) to hide the magic numbers. It results in a new version of the function:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="w"> </span><span class="nf">getFlaggedCells</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="w"> </span><span class="n">flaggedCells</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Cell</span><span class="o">&gt;</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Cell</span><span class="w"> </span><span class="n">cell</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">gameBoard</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cell</span><span class="p">.</span><span class="na">isFlagged</span><span class="p">())</span><span class="w"></span>
+<span class="w">      </span><span class="n">flaggedCells</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">cell</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">flaggedCells</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>With these simple name changes, it’s not difficult to understand what’s going on. This is the power of choosing good names.</p>
+</div>
+<div class="section" id="avoid-disinformation">
+<h3>Avoid Disinformation<a class="headerlink" href="#avoid-disinformation" title="Permalink to this heading"></a></h3>
+<p>Programmers must avoid leaving false clues that obscure the meaning of code. We should avoid words whose entrenched meanings vary from our intended meaning. For example, <code class="docutils literal notranslate"><span class="pre">hp</span></code>, <code class="docutils literal notranslate"><span class="pre">aix</span></code>, and <code class="docutils literal notranslate"><span class="pre">sco</span></code> would be poor variable names because they are the names of Unix platforms or variants. Even if you are coding a hypotenuse and <code class="docutils literal notranslate"><span class="pre">hp</span></code> looks like a good abbreviation, it could be disinformative. Do not refer to a grouping of accounts as an <code class="docutils literal notranslate"><span class="pre">accountList</span></code> unless it’s actually a <code class="docutils literal notranslate"><span class="pre">List</span></code>. The word list means something specific to programmers. If the container holding the accounts is not actually a <code class="docutils literal notranslate"><span class="pre">List</span></code>, it may lead to false conclusions. So <code class="docutils literal notranslate"><span class="pre">accountGroup</span></code> or <code class="docutils literal notranslate"><span class="pre">bunchOfAccounts</span></code> or just plain <code class="docutils literal notranslate"><span class="pre">accounts</span></code> would be better.</p>
+</div>
+<div class="section" id="make-meaningful-distinctions">
+<h3>Make Meaningful Distinctions<a class="headerlink" href="#make-meaningful-distinctions" title="Permalink to this heading"></a></h3>
+<p>Programmers create problems for themselves when they write code solely to satisfy a compiler or interpreter. For example, because you can’t use the same name to refer to two different things in the same scope, you might be tempted to change one name in an arbitrary way. Sometimes this is done by misspelling one, leading to the surprising situation where correcting spelling errors leads to an inability to compile.</p>
+<p>It is not sufficient to add number series or noise words, even though the compiler is satisfied. If names must be different, then they should also mean something different.</p>
+<p>Number-series naming <code class="docutils literal notranslate"><span class="pre">(a1,</span> <span class="pre">a2,</span> <span class="pre">..</span> <span class="pre">aN)</span></code> is the opposite of intentional naming. Such names are not disinformative—they are noninformative; they provide no clue to the author’s intention. Consider:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">copyChars</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">a1</span><span class="o">[]</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">a2</span><span class="o">[]</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">a1</span><span class="p">.</span><span class="na">length</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">a2</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a1</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This function reads much better when source and destination are used for the argument names.</p>
+<p>Noise words are another meaningless distinction. Imagine that you have a <code class="docutils literal notranslate"><span class="pre">Product</span></code> class. If you have another called <code class="docutils literal notranslate"><span class="pre">ProductInfo</span></code> or <code class="docutils literal notranslate"><span class="pre">ProductData</span></code>, you have made the names different without making them mean anything different. Info and Data are indistinct noise words like <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">an</span></code>, and <code class="docutils literal notranslate"><span class="pre">the</span></code>.</p>
+<p>Noise words are redundant. The word variable should never appear in a variable name. The word table should never appear in a table name. How is <code class="docutils literal notranslate"><span class="pre">NameString</span></code> better than <code class="docutils literal notranslate"><span class="pre">Name</span></code>? Would a <code class="docutils literal notranslate"><span class="pre">Name</span></code> ever be a floating point number? If so, it breaks an earlier rule about disinformation.</p>
+</div>
+<div class="section" id="member-prefixes">
+<h3>Member Prefixes<a class="headerlink" href="#member-prefixes" title="Permalink to this heading"></a></h3>
+<p>You also don’t need to prefix member variables with <code class="docutils literal notranslate"><span class="pre">m_</span></code> anymore. Your classes and functions should be small enough that you don’t need them. And you should be using an editing environment that highlights or colorizes members to make them distinct.</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Part</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">m_dsc</span><span class="p">;</span><span class="w"> </span><span class="c1">// The textual description</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setName</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_dsc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">_________________________________________________</span><span class="w"></span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">Part</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">description</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setDescription</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">description</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">description</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Besides, people quickly learn to ignore the prefix (or suffix) to see the meaningful part of the name. The more we read the code, the less we see the prefixes. Eventually the prefixes become unseen clutter and a marker of older code.</p>
+</div>
+<div class="section" id="avoid-mental-mapping">
+<h3>Avoid Mental Mapping<a class="headerlink" href="#avoid-mental-mapping" title="Permalink to this heading"></a></h3>
+<p>Readers shouldn’t have to mentally translate your names into other names they already know. This problem generally arises from a choice to use neither problem domain terms nor solution domain terms.</p>
+<p>This is a problem with single-letter variable names. Certainly a loop counter may be named <code class="docutils literal notranslate"><span class="pre">i</span></code> or <code class="docutils literal notranslate"><span class="pre">j</span></code> or <code class="docutils literal notranslate"><span class="pre">k</span></code> (though never <code class="docutils literal notranslate"><span class="pre">l</span></code>!) if its scope is very small and no other names can conflict with it. This is because those single-letter names for loop counters are traditional. However, in most other contexts a single-letter name is a poor choice; it’s just a place holder that the reader must mentally map to the actual concept. There can be no worse reason for using the name <code class="docutils literal notranslate"><span class="pre">c</span></code> than because <code class="docutils literal notranslate"><span class="pre">a</span></code> and <code class="docutils literal notranslate"><span class="pre">b</span></code> were already taken.</p>
+<p>In general programmers are pretty smart people. Smart people sometimes like to show off their smarts by demonstrating their mental juggling abilities. After all, if you can reliably remember that <code class="docutils literal notranslate"><span class="pre">r</span></code> is the lower-cased version of the url with the host and scheme removed, then you must clearly be very smart.</p>
+<p>One difference between a smart programmer and a professional programmer is that the professional understands that clarity is king. Professionals use their powers for good and write code that others can understand.</p>
+</div>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this heading"></a></h2>
+<div class="section" id="use-descriptive-names">
+<h3>Use Descriptive Names<a class="headerlink" href="#use-descriptive-names" title="Permalink to this heading"></a></h3>
+<p>Remember Ward’s principle: “You know you are working on clean code when each routine turns out to be pretty much what you expected.” Half the battle to achieving that principle is choosing good names for small functions that do one thing. The smaller and more focused a function is, the easier it is to choose a descriptive name.</p>
+<p>Don’t be afraid to make a name long. A long descriptive name is better than a short enigmatic name. A long descriptive name is better than a long descriptive comment. Use a naming convention that allows multiple words to be easily read in the function names, and then make use of those multiple words to give the function a name that says what it does.</p>
+<p>Don’t be afraid to spend time choosing a name. Indeed, you should try several different names and read the code with each in place. Modern IDEs like Eclipse or IntelliJ make it trivial to change names. Use one of those IDEs and experiment with different names until you find one that is as descriptive as you can make it.</p>
+<p>Choosing descriptive names will clarify the design of the module in your mind and help you to improve it. It is not at all uncommon that hunting for a good name results in a favorable restructuring of the code.</p>
+</div>
+<div class="section" id="have-no-side-effects">
+<h3>Have No Side Effects<a class="headerlink" href="#have-no-side-effects" title="Permalink to this heading"></a></h3>
+<p>Side effects are lies. Your function promises to do one thing, but it also does other hidden things. Sometimes it will make unexpected changes to the variables of its own class. Sometimes it will make them to the parameters passed into the function or to system globals. In either case they are devious and damaging mistruths that often result in strange temporal couplings and order dependencies. Consider, for example, the seemingly innocuous function this example. This function uses a standard algorithm to match a <code class="docutils literal notranslate"><span class="pre">userName</span></code> to a <code class="docutils literal notranslate"><span class="pre">password</span></code>. It returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if they match and <code class="docutils literal notranslate"><span class="pre">false</span></code> if anything goes wrong. But it also has a side effect. Can you spot it?</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">UserValidator</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="n">Cryptographer</span><span class="w"> </span><span class="n">cryptographer</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kt">boolean</span><span class="w"> </span><span class="nf">checkPassword</span><span class="p">(</span><span class="n">String</span><span class="w"> </span><span class="n">userName</span><span class="p">,</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">password</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">User</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UserGateway</span><span class="p">.</span><span class="na">findByName</span><span class="p">(</span><span class="n">userName</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">User</span><span class="p">.</span><span class="na">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">String</span><span class="w"> </span><span class="n">codedPhrase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">user</span><span class="p">.</span><span class="na">getPhraseEncodedByPassword</span><span class="p">();</span><span class="w"></span>
+<span class="w">      </span><span class="n">String</span><span class="w"> </span><span class="n">phrase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cryptographer</span><span class="p">.</span><span class="na">decrypt</span><span class="p">(</span><span class="n">codedPhrase</span><span class="p">,</span><span class="w"> </span><span class="n">password</span><span class="p">);</span><span class="w"></span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Valid Password&quot;</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">phrase</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">Session</span><span class="p">.</span><span class="na">initialize</span><span class="p">();</span><span class="w"></span>
+<span class="w">          </span><span class="k">return</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The side effect is the call to <code class="docutils literal notranslate"><span class="pre">Session.initialize()</span></code>, of course. The <code class="docutils literal notranslate"><span class="pre">checkPassword</span></code> function, by its name, says that it checks the password. The name does not imply that it initializes the session. So a caller who believes what the name of the function says runs the risk of erasing the existing session data when he or she decides to check the validity of the user.</p>
+<p>This side effect creates a temporal coupling. That is, <code class="docutils literal notranslate"><span class="pre">checkPassword</span></code> can only be called at certain times (in other words, when it is safe to initialize the session). If it is called out of order, session data may be inadvertently lost. Temporal couplings are confusing, especially when hidden as a side effect. If you must have a temporal coupling, you should make it clear in the name of the function. In this case we might rename the function <code class="docutils literal notranslate"><span class="pre">checkPasswordAndInitializeSession</span></code>, though that certainly violates “Do one thing.”</p>
+</div>
+</div>
+<div class="section" id="comments">
+<h2>Comments<a class="headerlink" href="#comments" title="Permalink to this heading"></a></h2>
+<div class="section" id="comments-do-not-make-up-for-bad-code">
+<h3>Comments Do Not Make Up for Bad Code<a class="headerlink" href="#comments-do-not-make-up-for-bad-code" title="Permalink to this heading"></a></h3>
+<p>One of the more common motivations for writing comments is bad code. We write a module and we know it is confusing and disorganized. We know it’s a mess. So we say to ourselves, “Ooh, I’d better comment that!” No! You’d better clean it!</p>
+<p>Clear and expressive code with few comments is far superior to cluttered and complex code with lots of comments. Rather than spend your time writing the comments that explain the mess you’ve made, spend it cleaning that mess.</p>
+</div>
+<div class="section" id="explain-yourself-in-code">
+<h3>Explain Yourself in Code<a class="headerlink" href="#explain-yourself-in-code" title="Permalink to this heading"></a></h3>
+<p>There are certainly times when code makes a poor vehicle for explanation. Unfortunately, many programmers have taken this to mean that code is seldom, if ever, a good means for explanation. This is patently false. Which would you rather see? This:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Check to see if the employee is eligible for full benefits</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">employee</span><span class="p">.</span><span class="na">flags</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">HOURLY_FLAG</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">employee</span><span class="p">.</span><span class="na">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">65</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Or this?</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">employee</span><span class="p">.</span><span class="na">isEligibleForFullBenefits</span><span class="p">())</span><span class="w"></span>
+</pre></div>
+</div>
+<p>It takes only a few seconds of thought to explain most of your intent in code. In many cases it’s simply a matter of creating a function that says the same thing as the comment you want to write.</p>
+</div>
+<div class="section" id="informative-comments">
+<h3>Informative Comments<a class="headerlink" href="#informative-comments" title="Permalink to this heading"></a></h3>
+<p>It is sometimes useful to provide basic information with a comment. For example, consider this comment that explains the return value of an abstract method:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Returns an instance of the Responder being tested.</span><span class="w"></span>
+<span class="kd">protected</span><span class="w"> </span><span class="kd">abstract</span><span class="w"> </span><span class="n">Responder</span><span class="w"> </span><span class="nf">responderInstance</span><span class="p">();</span><span class="w"></span>
+</pre></div>
+</div>
+<p>A comment like this can sometimes be useful, but it is better to use the name of the function to convey the information where possible. For example, in this case the comment could be made redundant by renaming the function: <code class="docutils literal notranslate"><span class="pre">responderBeingTested</span></code>. Here’s a case that’s a bit better:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// format matched kk:mm:ss EEE, MMM dd, yyyy</span><span class="w"></span>
+<span class="n">Pattern</span><span class="w"> </span><span class="n">timeMatcher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Pattern</span><span class="p">.</span><span class="na">compile</span><span class="p">(</span><span class="s">&quot;\\d*:\\d*:\\d* \\w*, \\w* \\d*, \\d*&quot;</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In this case the comment lets us know that the regular expression is intended to match a time and date that were formatted with the SimpleDateFormat.format function using the specified format string. Still, it might have been better, and clearer, if this code had been moved to a special class that converted the formats of dates and times. Then the comment would likely have been superfluous.</p>
+</div>
+<div class="section" id="don-t-use-a-comment-when-you-can-use-a-function-or-variable">
+<h3>Don’t use a Comment When You Can Use a Function or Variable<a class="headerlink" href="#don-t-use-a-comment-when-you-can-use-a-function-or-variable" title="Permalink to this heading"></a></h3>
+<p>Consider the following stretch of code:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// does the module from the global list &lt;mod&gt; depend on the</span><span class="w"></span>
+<span class="c1">// subsystem we are part of?</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">smodule</span><span class="p">.</span><span class="na">getDependSubsystems</span><span class="p">().</span><span class="na">contains</span><span class="p">(</span><span class="n">subSysMod</span><span class="p">.</span><span class="na">getSubSystem</span><span class="p">()))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This could be rephrased without the comment as</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">ArrayList</span><span class="w"> </span><span class="n">moduleDependees</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">smodule</span><span class="p">.</span><span class="na">getDependSubsystems</span><span class="p">();</span><span class="w"></span>
+<span class="n">String</span><span class="w"> </span><span class="n">ourSubSystem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">subSysMod</span><span class="p">.</span><span class="na">getSubSystem</span><span class="p">();</span><span class="w"></span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">moduleDependees</span><span class="p">.</span><span class="na">contains</span><span class="p">(</span><span class="n">ourSubSystem</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The author of the original code may have written the comment first (unlikely) and then written the code to fulfill the comment. However, the author should then have refactored the code, as I did, so that the comment could be removed.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Advanced Software" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ControlsEngineering.html" class="btn btn-neutral float-right" title="Controls Engineering" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Team 3624, 2022.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
