@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gear Shift &mdash; Wiki  documentation</title>
+  <title>Tips &mdash; Wiki  documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
@@ -19,8 +19,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Hardware Shift" href="HardwareShift.html" />
-    <link rel="prev" title="DoubleSolenoid" href="../pneumatics/DoubleSolenoid.html" /> 
+    <link rel="next" title="Sensors" href="../sensors/index.html" />
+    <link rel="prev" title="Past Code Examples" href="PastEx.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,11 +58,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../motors/index.html">Motors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../drive/index.html">Drive Bases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pneumatics/index.html">Pneumatics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Gear Shift</a><ul>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gear Shift</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="HardwareShift.html">Hardware Shift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="SoftwareShift.html">Software Shift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="PastEx.html">Past Code Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Tips.html">Tips</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Tips</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../sensors/index.html">Sensors</a></li>
@@ -88,9 +88,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Gear Shift</li>
+          <li><a href="index.html">Gear Shift</a> &raquo;</li>
+      <li>Tips</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/docs/software/gearshift/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/docs/software/gearshift/Tips.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -98,24 +99,26 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gear-shift">
-<h1>Gear Shift<a class="headerlink" href="#gear-shift" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="HardwareShift.html">Hardware Shift</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SoftwareShift.html">Software Shift</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PastEx.html">Past Code Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tips.html">Tips</a></li>
-</ul>
-</div>
+  <div class="section" id="tips">
+<h1>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h1>
+<p><strong>DO NOT BE CONFINED TO THE WIKI</strong>- this lesson is just a guide for learning about the software aspects of gear shifting.<br />
+This is not a rulebook that you <em>must</em> be absolutely confined to this, I’m guilty of doing this as well.<br />
+Different situations need different implementations of code- <strong>not one implementation</strong> is always going to work! <br />
+I know that this has been/will be mentioned on your time on software- it is still <strong>important to realize</strong>.</p>
+<p><strong>ASK HARDWARE FOR HELP</strong>- Face it, most of us on software don’t know the difference between a nut and a bolt, less so than an entire gear shift system.<br />
+Hardware isn’t your enemy or anything, ask them for help! This can be crucial when understanding how a robot’s gear shift works.</p>
+<p><strong>CHECK PRESSURE IN COMPRESSOR</strong>- sometimes the solenoid won’t move like the way you want it to. This doesn’t mean that it is your code is the problem (still check it anyway).<br />
+Sometimes the compressor is not creating enough pressure for the solenoid to move- check out the wired connections to make sure it is properly working.</p>
+<p><strong>USE PROPER NAMING</strong>- make sure that you properly name your gears in the code (normal gear when drivine- driveGear, gear used when on defense- defenseDrive, etc).<br />
+Don’t use names that don’t tell the programmer anything (like g)- makes it harder to debug.</p>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../pneumatics/DoubleSolenoid.html" class="btn btn-neutral float-left" title="DoubleSolenoid" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="HardwareShift.html" class="btn btn-neutral float-right" title="Hardware Shift" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="PastEx.html" class="btn btn-neutral float-left" title="Past Code Examples" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../sensors/index.html" class="btn btn-neutral float-right" title="Sensors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

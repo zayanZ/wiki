@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gear Shift &mdash; Wiki  documentation</title>
+  <title>Hardware Shift &mdash; Wiki  documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
@@ -19,8 +19,8 @@
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Hardware Shift" href="HardwareShift.html" />
-    <link rel="prev" title="DoubleSolenoid" href="../pneumatics/DoubleSolenoid.html" /> 
+    <link rel="next" title="Software Shift" href="SoftwareShift.html" />
+    <link rel="prev" title="Gear Shift" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -58,8 +58,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../motors/index.html">Motors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../drive/index.html">Drive Bases</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pneumatics/index.html">Pneumatics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Gear Shift</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="HardwareShift.html">Hardware Shift</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Gear Shift</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hardware Shift</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#when-to-implement">When to Implement</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="SoftwareShift.html">Software Shift</a></li>
 <li class="toctree-l2"><a class="reference internal" href="PastEx.html">Past Code Examples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Tips.html">Tips</a></li>
@@ -88,9 +91,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Gear Shift</li>
+          <li><a href="index.html">Gear Shift</a> &raquo;</li>
+      <li>Hardware Shift</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../_sources/docs/software/gearshift/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/docs/software/gearshift/HardwareShift.md.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -98,15 +102,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <div class="section" id="gear-shift">
-<h1>Gear Shift<a class="headerlink" href="#gear-shift" title="Permalink to this heading"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="HardwareShift.html">Hardware Shift</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SoftwareShift.html">Software Shift</a></li>
-<li class="toctree-l1"><a class="reference internal" href="PastEx.html">Past Code Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tips.html">Tips</a></li>
-</ul>
+  <div class="section" id="hardware-shift">
+<h1>Hardware Shift<a class="headerlink" href="#hardware-shift" title="Permalink to this heading"></a></h1>
+<p>In order to utilize gear shift, you must create a subsystem and a command. Within the subsystem, you must create a DoubleSolenoid object (for information on what a double solenoid exactly is, consult <a class="reference internal" href="../../hardware/Pneumatics.html"><span class="doc std std-doc">this</span></a>. Along with this, you must create a method to set/toggle the gears (preferably toggle as there will most likely only be 2 gears using this style of gear shifting).</p>
+<p>This style of gear shifting will most commonly be used on simpler robot designs. The more complex the robot becomes, the harder it is for build to utilize the pneumatics required for the gear shifting. Usually this style will be used (as it has been the main style throughout our team’s history) but it may not be used if the robot design gets too complex.</p>
+<div class="section" id="when-to-implement">
+<h2>When to Implement<a class="headerlink" href="#when-to-implement" title="Permalink to this heading"></a></h2>
+<p>This style will most likely be decided entirely by build. It is mostly dependent on the pneumatic setup and how it will interact with the rest of the robot, along with other factors build has to take into account. Luckily, this is a simple style to implement into the code.</p>
 </div>
 </div>
 
@@ -114,8 +116,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../pneumatics/DoubleSolenoid.html" class="btn btn-neutral float-left" title="DoubleSolenoid" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="HardwareShift.html" class="btn btn-neutral float-right" title="Hardware Shift" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Gear Shift" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SoftwareShift.html" class="btn btn-neutral float-right" title="Software Shift" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

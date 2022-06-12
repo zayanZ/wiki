@@ -5,4 +5,7 @@ Gear Shift
    :maxdepth: 1
    :titlesonly:
 
-   GearShifting
+   HardwareShift
+   SoftwareShift
+   PastEx
+   Tips
