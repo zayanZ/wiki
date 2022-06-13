@@ -1,4 +1,4 @@
-# Bumpers
+# Introduction
 
 This is a brief explanation on how to make bumpers
 

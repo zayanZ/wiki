@@ -2,29 +2,21 @@ Team 3624 Wiki
 ==============
 
 Welcome to FRC Team 3624's Wiki! This is a collection of our resources
-for our Safety initiatives, and information for our build and software
-divisions.
+for our Build, Software, and CAD divisions, as well as our Safety initiatives.
 
 .. toctree::
    :maxdepth: 1
    :hidden:
-   :caption: Hardware
+   :caption: Build
 
-   docs/hardware/Tools
-   docs/hardware/Electronics
-   docs/hardware/DriveBase
-   docs/hardware/GearShifting
-   docs/hardware/Pneumatics
-   docs/hardware/Sensors
-   docs/hardware/Bumpers
-
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: Safety
-
-   docs/safety/Placeholder
+   docs/build/tools/index
+   docs/build/machines/index
+   docs/build/electronics/index
+   docs/build/drive/index
+   docs/build/gearshift/index
+   docs/build/pneumatics/index
+   docs/build/sensors/index
+   docs/build/bumpers/index
 
 .. toctree::
    :maxdepth: 1
@@ -43,3 +35,19 @@ divisions.
    docs/software/auto/index
    docs/software/competition/index
    docs/software/advanced/index
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: CAD
+
+   docs/cad/intro/index
+   docs/cad/fusion/index
+   docs/cad/practice/index
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Safety
+
+   docs/safety/Placeholder
