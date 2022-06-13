@@ -1,4 +1,4 @@
-# Gear Shifting
+# Introduction
 
 ## What is Gear Shifting
 
