@@ -1,6 +1,6 @@
 # 3D Printers
 
-Our CAD team mainly uses our 3d printers to prototype parts which will later go on the robot. We use the MakerBot Replicator 2. You can download the slicer [here](https://s	upport.makerbot.com/s/article/MakerBot-Desktop-Download). 
+Our CAD team mainly uses our 3d printers to prototype parts which will later go on the robot. We use the MakerBot Replicator 2. You can download the slicer [here](https://support.makerbot.com/s/article/MakerBot-Desktop-Download). 
 
 In order to export files from Fusion to the MakerBot slicer, first save your file. You can save your file by pressing the floppy disk icon in the top left, right above the **Design** tab. Next, right click the largest header in the **Browser** tab in the top left. It should be named whatever the file is named as, followed by v(Number). Next, press save as mesh, set the format to **STL (Binary)**. Structure and refinement should be set to **One File** and **Medium**, respectively. In order to export a file from Fusion directly to your slicer, check the box which says **Send to 3d Print Utility**. Next select **MakerBot** from the dropdown. Now, your file should be in the MakerBot slicer. 
 
